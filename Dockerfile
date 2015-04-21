@@ -21,5 +21,7 @@ RUN gem install --no-rdoc --no-ri bundler rails
 
 ADD blog/ /var/rails/
 
+ENTRYPOINT [ "/var/rails/bin/rails server" ]
+
 EXPOSE 80
 
